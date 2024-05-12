@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "deploy": "bun build ./yml2json.js --outdir ./out && bun run scripts/upload.js"
+  },
   "dependencies": {
     "js-yaml": "^4.1.0"
   }
