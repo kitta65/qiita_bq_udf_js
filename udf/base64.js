@@ -1,8 +1,8 @@
-import { default as buffer } from "node:buffer";
+import { default as Buffer } from "node:buffer";
 
 const base64 = {
   fromString: (s) => {
-    const buf = buffer.from(s, "utf8");
+    const buf = Buffer.from(s, "utf8");
     return buf.toString("base64");
   },
 };
