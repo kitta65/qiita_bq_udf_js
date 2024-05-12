@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "deploy": "bun build ./udf/* --outdir ./out && bun run scripts/rsync.js"
+    "deploy": "bun run bundle && bun run scripts/rsync.js",
+    "bundle": "rm out/*.js && bun build ./udf/* --outdir ./out"
   },
   "dependencies": {
     "js-yaml": "^4.1.0"
