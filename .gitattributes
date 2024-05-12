@@ -1,0 +1,5 @@
+# tells git to treat *.lockb files as binary data
+*.lockb binary
+
+# tells git that *.lockb files should use the `lockb` filter
+*.lockb diff=lockb
